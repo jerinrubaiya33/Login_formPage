@@ -1,0 +1,92 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow: hidden;
+}
+img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    /* z-index: -1; */
+}
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding: 40px;
+    transform: translate(-50%,-50% );
+    background-color: transparent;
+    backdrop-filter: blur(30px);
+    border: 2px solid  orange;
+    box-sizing: border-box;
+    border-radius: 2em;
+}
+ .login-box h2{
+    margin: 0 0 30px;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+.login-box .user-box{
+    position: relative;
+}
+.login-box .user-box input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+
+.login-box .user-box label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: 0.5s ease;
+
+} 
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label{
+    top: -20px;
+    left: 0;
+    color: rgb(184, 119, 0);
+    font-size: 14px;
+}
+ .login-box form a{
+    margin: 0 auto;
+    position: relative;
+    display: inline-block;
+    padding: 10px 120px;
+    color: white;
+    font-size: 18px;
+    background-color: transparent;
+    border-radius: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.5s ease;
+    margin-top: 50px;
+    letter-spacing: 4px;
+    border: 2px solid  rgb(255, 255, 255);
+} 
+.login-box a:hover{
+    background-color: white;
+    color: orange;
+} 
+.remember{
+    color: rgb(255, 255, 255);
+} 
